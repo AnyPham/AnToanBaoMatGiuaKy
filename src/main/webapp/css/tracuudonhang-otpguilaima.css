@@ -1,0 +1,467 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+/*Header*/
+#header {
+    background-color: #4a90e2;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+#header-top {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 72px;
+
+}
+
+#header-top .logo > img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+#header-top .tinh {
+    width: 135px;
+    height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #a8d0ff61;
+    line-height: 15px;
+    border-radius: 4px;
+    padding: 4px 10px 4px 6px;
+    position: relative;
+    margin-top: 16px;
+
+}
+
+#header-top .tinh > span {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    position: relative;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-right: 15px;
+}
+
+#header-top .tinh > span::before {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    content: '';
+    position: absolute;
+    top: 2%;
+    right: 1px;
+}
+
+#header-top #input-search {
+    width: 350px;
+    height: 36px;
+    border-radius: 4px;
+    margin-top: 16px;
+    border: none;
+}
+
+#header-top .search-bar {
+    position: relative;
+}
+
+#input-search::placeholder {
+    padding-left: 8px;
+}
+
+#header-top .search-bar .fa-magnifying-glass {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+}
+
+#header-top .tai-khoan-don-hang {
+    width: 135px;
+    height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #a8d0ff61;
+    line-height: 15px;
+    border-radius: 4px;
+    padding: 4px 6px 4px 6px;
+    position: relative;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-top .gio-hang {
+    width: 68px;
+    height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #a8d0ff61;
+    line-height: 15px;
+    border-radius: 4px;
+    padding: 4px 6px 4px 6px;
+    position: relative;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+#header-top .lien-he {
+    height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #a8d0ff61;
+    line-height: 15px;
+    border-radius: 4px;
+    padding: 4px 15px;
+    position: relative;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+#header-top .khuyen-mai {
+    height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #a8d0ff61;
+    line-height: 15px;
+    border-radius: 4px;
+    padding: 4px 6px 4px 6px;
+    position: relative;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+#header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-bottom .headbot-items {
+    text-decoration: none;
+    margin: 5px 15px 20px 15px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+
+}
+
+/*tracuudonhang-otpguilaima*/
+
+
+.tracuudonhang-guilaima{
+    display: flex;
+    padding-top: 150px;
+}
+.tracuudonhang-bigbanner{
+    width: 50%;
+
+}
+.tracuudonhang-bigbanner img{
+    padding-top: 100px;
+    width: 100%;
+
+}
+.tracuudonhang-guilaima-noidung {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.tracuudonhang-guilaima-noidung-box{
+    display: block;
+    border: 1px solid #f1f1f1;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .11);
+    margin-left: 50px;
+}
+.tracuudonhang-guilaima-noidung-p{
+    font-size: 17px;
+    font-family: Arial, Tahoma, sans-serif;
+    padding-left: 30px;
+    padding-top: 60px;
+
+}
+.tracuudonhang-guilaima-noidung-input{
+    padding-left: 70px;
+    padding-top: 10px;
+}
+.tracuudonhang-guilaima-noidung-input input{
+    width: 300px;
+    height: 50px;
+    border: 1px solid #a49b9b;
+    border-radius: 30px;
+
+
+}
+.tracuudonhang-guilaima-noidung-input input::placeholder{
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-left: 35px;
+}
+.tracuudonhang-guilaima-noidung-input i{
+    font-size: 25px;
+    color: #2f80ed;
+}
+.tracuudonhang-guilaima-noidung-button{
+    padding-top: 15px;
+    padding-left: 95px;
+}
+.tracuudonhang-guilaima-noidung-button button{
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    font-size: 17px;
+    background-color: #2f80ed;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+.tracuudonhang-guilaima-noidung-p2{
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 2px;
+    padding-top: 15px;
+    text-align: center;
+}
+.tracuudonhang-guilaima-noidung-p3{
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    color: #2f80ed;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+
+}
+.tracuudonhang-guilaima-noidung-guilaimaOTP{
+    text-align: center;
+    font-size: 13px;
+    font-family: Arial, Tahoma, sans-serif;
+    color: red;
+    padding-top: 10px;
+}
+
+/*tracuudonhang-otpguilaima*/
+
+#footer {
+    margin-top: 50px;
+    border-top: 1px solid #e0e0e0;
+}
+
+#footer .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer .container .tong-dai {
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#footer .tong-dai .tong-dai-ho-tro {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#footer .tong-dai a {
+    text-decoration: none;
+    color: #2f80ed;
+}
+
+#footer .container .lien-he {
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer .social .facebook {
+    text-decoration: none;
+    color: #2f80ed;
+    margin-right: 15px;
+}
+
+#footer .social .youtube {
+    text-decoration: none;
+    color: #2f80ed;
+}
+
+#footer .tap-doan p {
+    font-weight: 500;
+}
+
+#footer .tap-doan a > img {
+    width: 120px;
+    height: 30px;
+}
+/*Khung tinh thanh*/
+.modal-tinh-thanh {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 9999;
+
+}
+
+.modal-tinh-thanh.open {
+    display: flex;
+}
+
+.modal-tinh-thanh .modal-container {
+    width: 475px;
+    height: 435px;
+    background-color: white;
+    position: relative;
+    animation: modalFadeIn ease 0.7s;
+    border-radius: 8px;
+}
+
+.modal-container .header-modal {
+    height: 102px;
+    background-color: #4a90e2;
+    border-radius: 8px 8px 0 0;
+}
+
+.modal-container .header-modal .title-modal {
+    display: flex;
+    align-items: center;
+
+}
+
+.modal-container .header-modal .title-modal > p {
+    width: 360px;
+    display: inline-block;
+    margin-left: 10px;
+    color: white;
+    font-size: 13px;
+
+}
+
+.modal-container .header-modal .title-modal span {
+    font-weight: bold;
+}
+
+.modal-container .header-modal .title-modal > a {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    margin-left: 28px;
+    font-size: 13px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+.modal-container .header-modal .title-modal i {
+    margin-right: 8px;
+
+}
+
+.modal-container .header-modal form {
+    position: relative;
+}
+
+.modal-container form .tim-khu-vuc {
+    width: 456px;
+    height: 34px;
+    position: absolute;
+    left: 10px;
+    border-radius: 8px;
+    outline: 0;
+    padding: 0 37px;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.modal-container form .tim-khu-vuc::placeholder {
+
+}
+
+.modal-container form .icon-mini {
+    position: absolute;
+    top: 11px;
+    left: 21px;
+}
+
+.modal-tinh-thanh .content-modal {
+    background-color: white;
+    max-height: 340px;
+    overflow-y: auto;
+    width: 446px;
+    height: 325px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+
+.modal-tinh-thanh .content-modal p {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.modal-tinh-thanh .content-modal ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    overflow-x: hidden;
+}
+
+.modal-tinh-thanh .content-modal ul li {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 13px;
+    width: 140px;
+
+
+}
+
+.modal-tinh-thanh .content-modal ul li a {
+    text-decoration: none;
+    border-bottom: 1px solid #f1f1f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333333;
+    display: block;
+}
+/*Class*/
+.container {
+    width: 1200px;
+    margin: auto;
+}

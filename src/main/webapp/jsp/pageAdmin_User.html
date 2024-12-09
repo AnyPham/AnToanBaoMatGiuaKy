@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý tài khoản</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pageAdmin_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        .icon-wrapper {
+            margin-top: 2px;
+            background-color: #4a90e2;
+            display: inline-block;
+            margin-right: 10px;
+            padding: 5px; /* Điều này tạo khoảng trắng xung quanh biểu tượng */
+            border-radius: 50%; /* Để tạo biểu tượng hình tròn */
+        }
+
+        .icon-wrapper i {
+            color: #ffffff; /* Màu trắng cho biểu tượng */
+        }
+    </style>
+
+</head>
+<body>
+<div class="sidebar">
+    <div class="logo-details">
+        <a href="pageAdmin_Index.html"><img src="https://th.bing.com/th/id/OIP.ZpscpAS7kf2k2s_W_YdeuQHaHa?pid=ImgDet&rs=1" width="240px" height="150px"></a>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a href="pageAdmin_Index.html" class="active">
+                <i class="fa-solid fa-border-all"></i>
+                <span class="links_name">Trang chủ</span>
+            </a>
+        </li>
+        <li>
+            <a href="pageAdmin_Storage.html" class="active">
+                <i class="fa-solid fa-box-open"></i>
+                <span class="links_name">Quản lý kho</span>
+            </a>
+        </li>
+        <li>
+            <a href="pageAdmin_Product.html">
+                <i class="fa-solid fa-box-archive"></i>
+                <span class="links_name">Quản Lý Sản Phẩm</span>
+            </a>
+        </li>
+        <li>
+            <a href="pageAdmin_Checkout.html">
+                <i class="fa-solid fa-note-sticky"></i>
+                <span class="links_name">Quản Lý Đơn Hàng</span>
+            </a>
+        </li>
+        <li>
+            <a href="pageAdmin_User.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="links_name">Quản Lý Tài Khoản</span>
+            </a>
+        </li>
+
+        <li class="log_out">
+            <a href="pageAdmin_login.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="links_name">Đăng xuất</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<section class="home-section">
+    <div class="home-content">
+        <div class="manager-product">
+            <div class="title">Danh Sách Tài Khoản</div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row element-button">
+                        <div class="col-sm-2">
+                            <a class="btn btn-add btn-sm" href="pageAdmin_addUser.html" title="Thêm">
+                                <i class="fas fa-plus"></i>
+                                Thêm tài khoản</a>
+                        </div>
+
+                    </div>
+                    <table id="table-id" class="table table-hover table-bordered">
+                        <thead>
+                        <tr>
+                            <th scope="col">Mã tài khoản</th>
+                            <th scope="col">Tên người dùng</th>
+                            <th scope="col">Email</th>
+
+                            <th scope="col">Quyền</th>
+                            <th scope="col">Chức năng</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">21130360</th>
+                            <td>Nguyễn Thanh Hoài</td>
+                            <td>21130360@st.hcmuaf.edu.vn</td>
+
+                            <td>Admin</td>
+                            <td>
+                                <a title="Xóa tài khoản" href="#" class="icon-link">
+                                    <i class="icon-wrapper">
+                                        <i class="fas fa-trash-alt"></i> <!-- Biểu tượng thùng rác -->
+                                    </i>
+                                </a>
+                                <a title="Chỉnh sửa" href="#" class="icon-link">
+                                    <i class="icon-wrapper">
+                                        <i class="fas fa-pen"></i> <!-- Biểu tượng thùng rác -->
+                                    </i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">21130290</th>
+                            <td>Nguyễn Quốc Bình</td>
+                            <td>21130290@st.hcmuaf.edu.vn</td>
+
+                            <td>User</td>
+                            <td>
+                                <a title="Xóa tài khoản" href="#" class="icon-link">
+                                    <i class="icon-wrapper">
+                                        <i class="fas fa-trash-alt"></i> <!-- Biểu tượng thùng rác -->
+                                    </i>
+                                </a>
+                                <a title="Chỉnh sửa" href="#" class="icon-link">
+                                    <i class="icon-wrapper">
+                                        <i class="fas fa-pen"></i> <!-- Biểu tượng thùng rác -->
+                                    </i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">21130374</th>
+                            <td>Đoàn Quốc Huy</td>
+                            <td>21130374@st.hcmuaf.edu.vn</td>
+
+                            <td>User</td>
+                            <td>
+                                <a title="Xóa tài khoản" href="#" class="icon-link">
+                                    <i class="icon-wrapper">
+                                        <i class="fas fa-trash-alt"></i> <!-- Biểu tượng thùng rác -->
+                                    </i>
+                                </a>
+                                <a title="Chỉnh sửa" href="#" class="icon-link">
+                                    <i class="icon-wrapper">
+                                        <i class="fas fa-pen"></i> <!-- Biểu tượng thùng rác -->
+                                    </i>
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="../js/bootstrap.bundle.min.js"></script>
+<script>$("#table-id").DataTable();
+</script>
+</body>
+</html>

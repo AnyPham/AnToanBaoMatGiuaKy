@@ -1,0 +1,37 @@
+.home-content .manager-checkout {
+    width: 97%;
+    background: #fff;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+}
+
+.manager-checkout .title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #4a90e2;}
+
+.tablinks {
+    padding: 10px 10px;
+    border: none;
+    background: #fff;
+}
+
+.tablinks:hover {
+    color: #4a90e2;
+}
+
+.tablinks.active {
+    border: none;
+    border-bottom: 2px solid #4a90e2;
+    color: #4a90e2;
+}
+
+.tabcontent {
+    display: none;
+    /*padding: 6px 12px;*/
+    /*border: 1px solid #ccc;*/
+    /*border-top: none;*/
+}

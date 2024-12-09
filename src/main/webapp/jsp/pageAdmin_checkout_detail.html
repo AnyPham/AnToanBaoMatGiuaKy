@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết đơn hàng</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .icon-wrapper {
+            margin-top: 2px;
+            background-color: #4a90e2;
+            display: inline-block;
+            margin-right: 10px;
+            padding: 5px; /* Điều này tạo khoảng trắng xung quanh biểu tượng */
+            border-radius: 50%; /* Để tạo biểu tượng hình tròn */
+        }
+
+        .icon-wrapper i {
+            color: #ffffff; /* Màu trắng cho biểu tượng */
+        }
+    </style>
+</head>
+<body>
+<div class="sidebar">
+    <div class="logo-details">
+        <a href="pageAdmin_Index.html"><img src="https://th.bing.com/th/id/OIP.ZpscpAS7kf2k2s_W_YdeuQHaHa?pid=ImgDet&rs=1" width="240px" height="150px"></a>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a href="pageAdmin_Index.html" class="active">
+                <i class="fa-solid fa-border-all"></i>
+                <span class="links_name">Trang chủ</span>
+            </a>
+        </li>
+        <li>
+            <a href="pageAdmin_Storage.html" class="active">
+                <i class="fa-solid fa-box-open"></i>
+                <span class="links_name">Quản lý kho</span>
+            </a>
+        </li>
+        <li>
+            <a href="pageAdmin_Product.html">
+                <i class="fa-solid fa-box-archive"></i>
+                <span class="links_name">Quản Lý Sản Phẩm</span>
+            </a>
+        </li>
+        <li>
+            <a href="pageAdmin_Checkout.html">
+                <i class="fa-solid fa-note-sticky"></i>
+                <span class="links_name">Quản Lý Đơn Hàng</span>
+            </a>
+        </li>
+        <li>
+            <a href="pageAdmin_User.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="links_name">Quản Lý Tài Khoản</span>
+            </a>
+        </li>
+
+        <li class="log_out">
+            <a href="pageAdmin_login.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="links_name">Đăng xuất</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+<section class="home-section">
+    <div class="home-content">
+        <div class="manager-checkout">
+            <div class="title">Quản Lý Đơn Hàng</div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab row element-button">
+                        <button class="tablinks col-sm-2" id="defaultOpen" onclick="openCity(event, 'tab1')">Chi tiết đơn hàng
+                        </button>
+
+                    </div>
+                    <div id="tab1" class="tabcontent">
+                        <p><span style="font-weight: bold">Tên người nhận: </span> Nguyễn Quốc Bình</p>
+                        <p><span style="font-weight: bold">Số điện thoại: </span> 078 6191 721</p>
+                        <p><span style="font-weight: bold">Ngày đặt hàng: </span> 27/10/2023</p>
+                        <p><span style="font-weight: bold">Địa chỉ: </span> Đại học Nông Lâm TP.HCM</p>
+                        <p><span style="font-weight: bold">Ghi chú: </span> Giao ở khoa CNTT</p>
+                        <div class="card">
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Sản phẩm</th>
+                                        <th scope="col">Giá tiền</th>
+                                        <th scope="col">Số lượng</th>
+                                        <th scope="col">Thành tiền</th>
+
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th style="font-weight: normal"  scope="row">Máy lọc nước nóng lạnh Sanaky</th>
+                                        <td><a>3.000.000<sup>đ</sup></a></td>
+                                        <td><a>1</a></td>
+                                        <td>3.000.000<sup>đ</sup></td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: normal" scope="row">Máy lọc nước nóng lạnh Sanaky</th>
+                                        <td><a>3.000.000<sup>đ</sup></a></td>
+                                        <td><a>1</a></td>
+                                        <td>3.000.000<sup>đ</sup></td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: normal" scope="row">Máy lọc nước nóng lạnh Sanaky</th>
+                                        <td><a>3.000.000<sup>đ</sup></a></td>
+                                        <td><a>1</a></td>
+                                        <td>3.000.000<sup>đ</sup></td>
+
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <p style="margin-left: 835px; color: red"><span style="font-weight: bold">Phí giao hàng: </span> 0<sup>đ</sup> </p>
+                        <p style="margin-left: 835px; color: red"><span style="font-weight: bold">Tổng tiền: </span> 9.000.000<sup>đ</sup> </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/pageAdmin_main.js"></script>
+<script>
+
+    // $("#table-id-1").DataTable();
+
+</script>
+
+</body>
+</html>
