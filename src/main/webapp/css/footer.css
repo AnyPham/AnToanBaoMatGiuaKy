@@ -1,0 +1,211 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 12px;
+}/*Footer*/
+#footer {
+
+    border-top: 1px solid #e0e0e0;
+}
+
+#footer .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer .container .tong-dai {
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#footer .tong-dai .tong-dai-ho-tro {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#footer .tong-dai a {
+    text-decoration: none;
+    color: #2f80ed;
+}
+
+#footer .container .lien-he {
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer .social .facebook {
+    text-decoration: none;
+    color: #2f80ed;
+    margin-right: 15px;
+}
+
+#footer .social .youtube {
+    text-decoration: none;
+    color: #2f80ed;
+}
+
+#footer .tap-doan p {
+    font-weight: 500;
+}
+
+#footer .tap-doan a > img {
+    width: 120px;
+    height: 30px;
+}
+
+/*Phần tỉnh thành*/
+.modal-tinh-thanh {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+
+.modal-tinh-thanh.open {
+    display: flex;
+}
+
+.modal-tinh-thanh .modal-container {
+    width: 475px;
+    height: 435px;
+    background-color: white;
+    position: relative;
+    animation: modalFadeIn ease 0.7s;
+    border-radius: 8px;
+}
+
+.modal-container .header-modal {
+    height: 102px;
+    background-color: #4a90e2;
+    border-radius: 8px 8px 0 0;
+}
+
+.modal-container .header-modal .title-modal {
+    display: flex;
+    align-items: center;
+
+}
+
+.modal-container .header-modal .title-modal > p {
+    width: 360px;
+    display: inline-block;
+    margin-left: 10px;
+    color: white;
+    font-size: 13px;
+
+}
+
+.modal-container .header-modal .title-modal span {
+    font-weight: bold;
+}
+
+.modal-container .header-modal .title-modal > a {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    margin-left: 28px;
+    font-size: 13px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+.modal-container .header-modal .title-modal i {
+    margin-right: 8px;
+
+}
+
+.modal-container .header-modal form {
+    position: relative;
+}
+
+.modal-container form .tim-khu-vuc {
+    width: 456px;
+    height: 34px;
+    position: absolute;
+    left: 10px;
+    border-radius: 8px;
+    outline: 0;
+    padding: 0 37px;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.modal-container form .tim-khu-vuc::placeholder {
+
+}
+
+.modal-container form .icon-mini {
+    position: absolute;
+    top: 11px;
+    left: 21px;
+}
+
+.modal-tinh-thanh .content-modal {
+    background-color: white;
+    max-height: 340px;
+    overflow-y: auto;
+    width: 446px;
+    height: 325px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+
+.modal-tinh-thanh .content-modal p {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.modal-tinh-thanh .content-modal ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    overflow-x: hidden;
+}
+
+.modal-tinh-thanh .content-modal ul li {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 13px;
+    width: 140px;
+
+
+}
+
+.modal-tinh-thanh .content-modal ul li a {
+    text-decoration: none;
+    border-bottom: 1px solid #f1f1f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333333;
+    display: block;
+}
+
+
+/*Class*/
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.section {
+    width: 600px;
+    margin: auto;
+}

@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 12px;
+}
+/*Class*/
+.container {
+    width: 1200px;
+    margin: auto;
+}
+/*silder*/
+.slider{
+    margin-top: 155px;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+.slider-ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+.slider-ul li img{
+    height: 284px;
+    width: 564px;
+    cursor: pointer;
+}
+.slider-ul li{
+    list-style-type: none;
+    background-color: #f7f7f7;
+    padding-bottom: 60px;
+}
+.slider-ul li a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 16px;
+}
+.slider-ul li a:hover{
+    color: #2f80ed;
+}
+.slider #countdown {
+    display: flex;
+    justify-content: center;
+}
+#countdown {
+    display: flex;
+    align-items: center;
+}
+
+.countdown-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.countdown-item p, .countdown-item span {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.countdown-item span {
+    margin-right: 5px;
+}
+.countdown-item .label {
+    font-size: 13px;
+}
+.btn-oder {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+
+}
